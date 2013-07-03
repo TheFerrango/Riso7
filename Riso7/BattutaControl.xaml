@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="Riso7.BattutaControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="240" d:DesignWidth="480" MinWidth="480" MaxWidth="480">
+    
+    <Grid x:Name="LayoutRoot">
+    
+    <TextBlock x:Name="txtBattuta" Text="Banana" FontFamily="Comic Sans MS" FontSize="24" TextWrapping="Wrap" AllowDrop="False" Margin="0,5">
+      
+    </TextBlock>
+    <Line X2="480" Stroke="Red"></Line>
+  </Grid>
+  <toolkit:ContextMenuService.ContextMenu>
+    <toolkit:ContextMenu Name="MyContextMenu">
+      <toolkit:MenuItem Header="Share via mail" Click="MenuItem_Click"/>
+      <toolkit:MenuItem Header="Share on social network" Click="MenuItem_Click_1"/>
+    </toolkit:ContextMenu>
+  </toolkit:ContextMenuService.ContextMenu>
+</UserControl>
